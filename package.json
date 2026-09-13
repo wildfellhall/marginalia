@@ -4,21 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "predev": "node scripts/store-art.mjs && node scripts/prepare-pdf-assets.mjs",
+    "predev": "node scripts/prepare-pdf-assets.mjs",
     "dev": "vite --host 127.0.0.1",
-    "prebuild": "node scripts/store-art.mjs && node scripts/prepare-pdf-assets.mjs",
+    "prebuild": "node scripts/prepare-pdf-assets.mjs",
     "build": "vite build && node scripts/build-extension.mjs",
-    "preview": "vite preview --host 127.0.0.1",
-    "test": "node --test tests/*.test.mjs",
-    "test:browser": "node scripts/verify.mjs",
-    "test:extension": "node scripts/verify-extension.mjs",
-    "test:folders": "node scripts/verify-folders.mjs",
-    "store:art": "node scripts/store-art.mjs",
-    "store:screenshots": "node scripts/store-screenshots.mjs",
-    "release": "npm run build && node scripts/package-release.mjs && node scripts/check-release.mjs",
-    "release:check": "node scripts/check-release.mjs",
-    "release:test": "node scripts/verify-package.mjs",
-    "release:pack-test": "node scripts/verify-chrome-pack.mjs"
+    "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {
     "@fontsource/dm-sans": "^5.2.8",
@@ -32,11 +22,8 @@
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "@playwright/test": "^1.63.0",
     "@vitejs/plugin-react": "^5.0.2",
     "esbuild": "^0.25.9",
-    "prettier": "^3.9.6",
-    "sharp": "^0.35.4",
     "vite": "^7.1.3"
   }
 }
