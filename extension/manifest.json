@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Marginalia — Study Notes & Highlights",
+  "version": "1.1.1",
+  "minimum_chrome_version": "140",
+  "description": "Highlight websites, PDFs, and EPUBs. Take reading notes, organize by course, and search your annotations.",
+  "permissions": ["storage", "activeTab", "unlimitedStorage"],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "Marginalia",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "options_ui": { "page": "index.html", "open_in_tab": true },
+  "background": { "service_worker": "background.js", "type": "module" },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; worker-src 'self'"
+  }
+}

@@ -1,0 +1,43 @@
+.reading-surface {
+  position: relative;
+}
+.reader-marker {
+  position: absolute;
+  right: -27px;
+  width: 22px;
+  min-height: 23px;
+  border: 1px solid #abb79c70;
+  border-radius: 3px;
+  padding: 4px;
+  color: #67725a;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reader-marker.tab {
+  width: 27px;
+  border-radius: 0 4px 4px 0;
+}
+.reader-marker.flag {
+  clip-path: polygon(0 0, 100% 0, 82% 50%, 100% 100%, 0 100%);
+}
+.reader-marker.bookmark {
+  padding-bottom: 8px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
+}
+.annotation-card.sticky {
+  background: color-mix(in srgb, var(--annotation-color) 24%, #fcfbf8);
+  border: 1px solid color-mix(in srgb, var(--annotation-color) 65%, #c9c9bb);
+  border-radius: 2px;
+}
+@media (max-width: 680px) {
+  .reader-marker {
+    right: -19px;
+    width: 18px;
+    padding: 3px;
+  }
+  .reader-marker.tab {
+    width: 19px;
+  }
+}

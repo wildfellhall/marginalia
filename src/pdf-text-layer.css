@@ -1,0 +1,18 @@
+/* Text geometry follows PDF.js's official textLayer styles. */
+.textLayer {
+  letter-spacing: normal;
+  word-spacing: normal;
+  --min-font-size: 1;
+  --text-scale-factor: calc(var(--total-scale-factor) * var(--min-font-size));
+  --min-font-size-inv: calc(1 / var(--min-font-size));
+}
+.textLayer > :not(.markedContent),
+.textLayer .markedContent span:not(.markedContent) {
+  font-size: calc(var(--text-scale-factor) * var(--font-height));
+  transform: rotate(var(--rotate)) scaleX(var(--scale-x))
+    scale(var(--min-font-size-inv));
+}
+.textLayer :is(span, br) {
+  user-select: text;
+  -webkit-user-select: text;
+}
