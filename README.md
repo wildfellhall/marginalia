@@ -2,6 +2,8 @@
 
 **Study Notes & Highlights** — a Chrome and Edge extension for annotating websites, PDFs, and EPUBs. Organize readings and notes by course or assignment, then search them when writing or reviewing.
 
+New update including more styles and annotation features coming soon!
+
 Available Now: https://chromewebstore.google.com/detail/khajohmbdncfelepgmkaiikpmefjogfm?utm_source=item-share-cb
 
 
