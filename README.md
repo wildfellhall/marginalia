@@ -5,7 +5,7 @@
 New update including more styles and annotation features coming soon!
 
 Available Now: https://chromewebstore.google.com/detail/khajohmbdncfelepgmkaiikpmefjogfm?utm_source=item-share-cb
-
+Also Check Out: https://chromewebstore.google.com/detail/releaf-%E2%80%94-replace-doomscro/oiineleaecjepkidpacgkbdopdlpmgpe?authuser=0&hl=en
 
 Demonstration Video: https://www.youtube.com/watch?v=rI3JVI6jBSM&t=98s
 
